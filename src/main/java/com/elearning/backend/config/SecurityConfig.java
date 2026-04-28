@@ -30,7 +30,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-      config.setAllowedOrigins(List.of(
+        config.setAllowedOrigins(List.of(
     "http://localhost:3000",
     "https://elearning-frontend-one-theta.vercel.app"
 ));
