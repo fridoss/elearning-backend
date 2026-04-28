@@ -43,12 +43,7 @@ public ResponseEntity<Lesson> getLessonById(
         .orElse(ResponseEntity.notFound().build());
 }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteLesson(
-            @PathVariable Long id) {
-        lessonService.deleteLesson(id);
-        return ResponseEntity.ok().build();
-    }
+   
   @DeleteMapping("/{id}")
 public ResponseEntity<Void> deleteLesson(@PathVariable Long id) {
     lessonRepository.deleteById(id);
